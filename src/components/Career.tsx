@@ -5,7 +5,7 @@ const Career = () => {
     <div className="career-section section-container">
       <div className="career-container">
         <h2>
-          My career <span>&</span>
+          My Achievement <span>&</span>
           <br /> experience
         </h2>
         <div className="career-info">
@@ -15,32 +15,30 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Full-Stack development intern</h4>
+                <h5>Vaidsys Technologies</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2025</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+            I completed a Full-Stack Development internship at Vaidsys Technologies (May–June 2025), where I gained hands-on experience in building web applications and improving my technical and collaborative skills.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Build-A-Thon</h4>
+                <h5>by BoardInfinity</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2025</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+            Secured 5th rank in Build-A-Thon by BoardInfinity for creating an AI-powered, ATS-friendly Resume Builder using Python, Streamlit, SpaCy, Google Gemini API, and CSS, with real-time suggestions and a responsive UI.
+
+
             </p>
           </div>
-          <div className="career-info-box">
+          {/* <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Position In Company</h4>
@@ -53,7 +51,7 @@ const Career = () => {
               labore sit non ipsum temporibus quidem, deserunt eaque officiis
               mollitia ratione suscipit repellat.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
