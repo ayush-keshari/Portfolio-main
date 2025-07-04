@@ -2,13 +2,14 @@ import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import { useLayoutEffect } from "react";
 
-gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 const Work = () => {
-  useGSAP(() => {
+  useLayoutEffect(() => {
     let translateX: number = 0;
+
     function setTranslateX() {
       const box = document.getElementsByClassName("work-box");
       const rectLeft = document
@@ -41,6 +42,7 @@ const Work = () => {
       delay: 0.2,
     });
   }, []);
+
   return (
     <div className="work-section" id="work">
       <div className="work-container section-container">
@@ -53,7 +55,6 @@ const Work = () => {
               <div className="work-info">
                 <div className="work-title">
                   <h3>0{index + 1}</h3>
-
                   <div>
                     <h4>Project Name</h4>
                     <p>Category</p>
