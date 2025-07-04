@@ -1,4 +1,4 @@
-import { SplitText } from "gsap-trial/SplitText";
+import { SplitText } from "gsap/SplitText";
 import gsap from "gsap";
 import { smoother } from "../Navbar";
 
@@ -6,6 +6,7 @@ export function initialFX() {
   document.body.style.overflowY = "auto";
   smoother.paused(false);
   document.getElementsByTagName("main")[0].classList.add("main-active");
+
   gsap.to("body", {
     backgroundColor: "#0b080c",
     duration: 0.5,
@@ -19,6 +20,7 @@ export function initialFX() {
       linesClass: "split-line",
     }
   );
+
   gsap.fromTo(
     landingText.chars,
     { opacity: 0, y: 80, filter: "blur(5px)" },
@@ -61,6 +63,7 @@ export function initialFX() {
       delay: 0.8,
     }
   );
+
   gsap.fromTo(
     [".header", ".icons-section", ".nav-fade"],
     { opacity: 0 },
